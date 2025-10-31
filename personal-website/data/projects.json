@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Personal Portfolio",
+        "description": "A personal portfolio website to showcase my work as a developer.",
+        "link": "https://myportfolio.com",
+        "technologies": ["React", "TypeScript", "CSS"],
+        "image": "https://myportfolio.com/images/portfolio.png"
+    },
+    {
+        "title": "Weather App",
+        "description": "A web application that provides weather forecasts using a third-party API.",
+        "link": "https://myweatherapp.com",
+        "technologies": ["React", "JavaScript", "API"],
+        "image": "https://myweatherapp.com/images/weatherapp.png"
+    },
+    {
+        "title": "E-commerce Store",
+        "description": "An online store built with React and Node.js, featuring a shopping cart and user authentication.",
+        "link": "https://myecommercestore.com",
+        "technologies": ["React", "Node.js", "MongoDB"],
+        "image": "https://myecommercestore.com/images/store.png"
+    },
+    {
+        "title": "Blog Platform",
+        "description": "A blogging platform where users can create, edit, and share their posts.",
+        "link": "https://myblogplatform.com",
+        "technologies": ["React", "Express", "MongoDB"],
+        "image": "https://myblogplatform.com/images/blog.png"
+    }
+]
