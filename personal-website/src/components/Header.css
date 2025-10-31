@@ -1,0 +1,31 @@
+/* Minimal header styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: #0f172a;
+  color: #fff;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.header-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.header-nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+.header-nav a:hover {
+  color: #fff;
+}
