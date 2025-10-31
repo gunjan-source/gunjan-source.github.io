@@ -1,6 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Projects from './pages/Projects';
@@ -13,15 +13,17 @@ const App = () => {
     return (
         <Router>
             <Header />
-            <Switch>
-                <Route path="/" exact component={Home} />
-                <Route path="/about" component={About} />
-                <Route path="/projects" component={Projects} />
-                <Route path="/contact" component={Contact} />
-            </Switch>
+            <main className="main-content">
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/projects" element={<Projects />} />
+                    <Route path="/contact" element={<Contact />} />
+                </Routes>
+            </main>
             <Footer />
         </Router>
     );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+createRoot(document.getElementById('root')!).render(<App />);
